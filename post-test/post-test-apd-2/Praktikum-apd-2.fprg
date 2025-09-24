@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Praktikum-apd-2"/>
+        <attribute name="authors" value="Acer"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-25 12:50:02 AM"/>
+        <attribute name="created" value="QWNlcjtMQVBUT1AtSFJDMUs2SUs7MjAyNS0wOS0yNDswNTowNTo1OSBQTTsyNzI3"/>
+        <attribute name="edited" value="QWNlcjtMQVBUT1AtSFJDMUs2SUs7MjAyNS0wOS0yNTsxMjo1MDowMiBBTTsxOzI4MDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="suhu" type="Real" array="True" size="6"/>
+            <declare name="jumlah, ratarata, suhu1, suhu2, suhu3, suhu4, suhu5, suhu6" type="Real" array="False" size=""/>
+            <declare name="NIM, bd" type="Integer" array="False" size=""/>
+            <declare name="BS" type="Boolean" array="False" size=""/>
+            <assign variable="suhu[0]" expression="27"/>
+            <assign variable="suhu1" expression="9/5 * suhu[0] + 32"/>
+            <assign variable="suhu[1]" expression="33"/>
+            <assign variable="suhu2" expression="9/5 * suhu[1] + 32"/>
+            <assign variable="suhu[2]" expression="46"/>
+            <assign variable="suhu3" expression="suhu[2] + 273.5"/>
+            <assign variable="suhu[3]" expression="55"/>
+            <assign variable="suhu4" expression="suhu[3] + 273.5"/>
+            <assign variable="suhu[4]" expression="67"/>
+            <assign variable="suhu5" expression="4/5 * suhu[4]"/>
+            <assign variable="suhu[5]" expression="92"/>
+            <assign variable="suhu6" expression="4/5 * suhu[5]"/>
+            <assign variable="NIM" expression="58"/>
+            <assign variable="jumlah" expression="suhu1+suhu2+suhu3+suhu4+suhu5+suhu6"/>
+            <assign variable="bd" expression="6"/>
+            <assign variable="ratarata" expression="jumlah/bd"/>
+            <assign variable="BS" expression="NIM &lt; ratarata"/>
+        </body>
+    </function>
+</flowgorithm>
