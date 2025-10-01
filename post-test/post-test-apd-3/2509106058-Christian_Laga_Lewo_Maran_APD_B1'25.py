@@ -71,7 +71,8 @@ ketik 3 untuk satuan Reamur""")
             suhu *= 5/9
             print (suhu)
         elif satuan_suhu == 3:
-            suhu /= 1000
+            suhu *= 5/4
+            suhu += 273
             print (suhu)
         else:
             print ("not found")
