@@ -78,7 +78,7 @@ while ulang == "Y":
 
     ulang = input("Apakah anda masih mau input lagi (Y/T)? ")
     
-    while ulang != "T":
+    while ulang != "Y" and ulang != "T":
         print("isi input hanya dengan Y/T")
         ulang = input("Apakah anda masih mau input lagi (Y/T)? ")
 
