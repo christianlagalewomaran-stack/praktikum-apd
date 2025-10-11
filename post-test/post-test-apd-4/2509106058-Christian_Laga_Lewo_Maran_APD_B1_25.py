@@ -77,6 +77,10 @@ while ulang == "Y":
         print("Golongan darah tidak valid")
 
     ulang = input("Apakah anda masih mau input lagi (Y/T)? ")
+    
+    while ulang != "Y" and ulang != "T":
+        print("isi input hanya dengan Y/T")
+        ulang = input("Apakah anda masih mau input lagi (Y/T)? ")
 
 print("\nRingkasan jumlah darah (ml):")
 print("A+ :", A_pos, "ml")
