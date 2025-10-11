@@ -82,7 +82,7 @@ while ulang == "Y":
         print("isi input hanya dengan Y/T")
         ulang = input("Apakah anda masih mau input lagi (Y/T)? ")
 
-print("\nRingkasan jumlah darah (ml):")
+print("Ringkasan jumlah darah (ml):")
 print("A+ :", A_pos, "ml")
 print("A- :", A_neg, "ml")
 print("B+ :", B_pos, "ml")
