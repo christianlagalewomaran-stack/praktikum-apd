@@ -19,9 +19,9 @@ O_neg = 0
 
 ulang = "Y"
 while ulang == "Y":
-    golongan = input("Masukkan golongan darah")
+    golongan = input("Masukkan golongan darah: ")
 
-    if golongan == "A ":
+    if golongan == "A":
         Rhesus = input("Masukkan Rhesus")
         if Rhesus == "+":
             print("Golongan darah A+")
@@ -34,7 +34,7 @@ while ulang == "Y":
         else:
             print("Rhesus tidak valid")
 
-    elif golongan == "B ":
+    elif golongan == "B":
         Rhesus = input("Masukkan Rhesus")
         if Rhesus == "+":
             print("Golongan darah B+")
@@ -47,7 +47,7 @@ while ulang == "Y":
         else:
             print("Rhesus tidak valid")
 
-    elif golongan == "AB ":
+    elif golongan == "AB":
         Rhesus = input("Masukkan Rhesus")
         if Rhesus == "+":
             print("Golongan darah AB+")
@@ -60,7 +60,7 @@ while ulang == "Y":
         else:
             print("Rhesus tidak valid")
 
-    elif golongan == "O ":
+    elif golongan == "O":
         Rhesus = input("Masukkan Rhesus")
         if Rhesus == "+":
             print("Golongan darah O+")
