@@ -40,29 +40,26 @@ def tambah_monster(nama, deskripsi):
         print(f"berhasil menambahkan", {nama})
         
 def ubah_nama_monster(nama_lama, nama_baru):
-    try:
-        if nama_lama in monstermusuh:
+    if nama_lama in monstermusuh:
             monstermusuh[nama_baru] = monstermusuh.pop(nama_lama)
             print ("berhasil mengubah", nama_lama, "menjadi", nama_baru)
-    except KeyError:
-        print("Monster tidak ditemukan dalam daftar")
+    else:
+        print ("monster atau musuh tidak ditemukan")
 
 def ubah_deskripsi(nama, deskripsi_baru):
-    try:
         if nama in monstermusuh:
             monstermusuh[nama] = deskripsi_baru
             print(f"Deskripsi {nama} berhasil diperbarui!")
-    except KeyError:
-        print("Monster tidak ditemukan dalam daftar")
+        else:
+            print ("monster atau musuh tidak ditemukan")
         
 def hapus_monster():
-    try:
-        hapus = input("Masukkan nama monster/musuh yang ingin dihapus: ")
-        if hapus in monstermusuh:
-            monstermusuh.pop(hapus)
-            print(f"{hapus} berhasil dihapus!")
-    except KeyError:
-        print("Monster tidak ditemukan dalam daftar")
+    hapus = input("Masukkan nama monster/musuh yang ingin dihapus: ")
+    if hapus in monstermusuh:
+        monstermusuh.pop(hapus)
+        print(f"{hapus} berhasil dihapus!")
+    else:
+         print ("monster atau musuh tidak ditemukan")
 
 while True:
     print(border)
