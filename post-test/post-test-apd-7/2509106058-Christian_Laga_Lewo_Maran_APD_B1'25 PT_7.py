@@ -38,6 +38,14 @@ def tambah_monster(nama, deskripsi):
     else:
         monstermusuh[nama] = deskripsi
         print(f"berhasil menambahkan", {nama})
+        
+def ubah_nama_monster(nama_lama, nama_baru):
+    try:
+        if nama_lama in monstermusuh:
+            monstermusuh[nama_baru] = monstermusuh.pop(nama_lama)
+            print ("berhasil mengubah", nama_lama, "menjadi", nama_baru)
+    except KeyError:
+        print("Monster tidak ditemukan dalam daftar")
 
 def ubah_deskripsi(nama, deskripsi_baru):
     try:
@@ -83,9 +91,10 @@ while True:
                         print("""Menu Admin
 1. Tampilkan daftar monster
 2. Tambah monster
-3. Ubah deskripsi monster
-4. Hapus monster
-5. Keluar""")
+3. Ubah nama monster
+4. Ubah deskripsi monster
+5. Hapus monster
+6. Keluar""")
                         print(border)
                         pilih = int(input("Pilih menu: "))
                         os.system("cls || clear")
@@ -97,12 +106,16 @@ while True:
                             deskripsi = input("Masukkan deskripsi: ")
                             tambah_monster(nama, deskripsi)
                         elif pilih == 3:
+                            nama_lama = input("Masukkan nama monster lama: ")
+                            nama_baru = input("Masukkan nama monster baru: ")
+                            ubah_nama_monster(nama_lama, nama_baru)
+                        elif pilih == 4:
                             nama = input("Masukkan nama monster: ")
                             deskripsi_baru = input("Masukkan deskripsi baru: ")
                             ubah_deskripsi(nama, deskripsi_baru)
-                        elif pilih == 4:
-                            hapus_monster()
                         elif pilih == 5:
+                            hapus_monster()
+                        elif pilih == 6:
                             print("Kembali ke menu utama...")
                             break
                         else:
