@@ -20,9 +20,10 @@ while True:
 
     elif masuk == 2:
         user = login()
-        os.system("cls || clear")
+
         try:
             if user == "admin":
+                os.system("cls || clear")
                 while True:
                     tabel = PrettyTable(["No", "Menu Admin"])
                     tabel.add_row(["1", "Tampilkan daftar monster"])
