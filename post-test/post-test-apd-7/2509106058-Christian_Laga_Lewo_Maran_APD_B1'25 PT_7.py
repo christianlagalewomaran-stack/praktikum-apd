@@ -59,7 +59,7 @@ def hapus_monster():
         monstermusuh.pop(hapus)
         print(f"{hapus} berhasil dihapus!")
     else:
-         print ("monster atau musuh tidak ditemukan")
+        print ("monster atau musuh tidak ditemukan")
 
 while True:
     print(border)
