@@ -30,7 +30,8 @@ while True:
                     tabel.add_row(["3", "Ubah nama monster"])
                     tabel.add_row(["4", "Ubah deskripsi monster"])
                     tabel.add_row(["5", "Hapus monster"])
-                    tabel.add_row(["6", "Keluar"])
+                    tabel.add_row(["6", "Lihat komentar"])
+                    tabel.add_row(["7", "Keluar"])
                     print(tabel)
                 
                     try:
@@ -61,7 +62,8 @@ while True:
                 while True:
                     tabel = PrettyTable(["No", "Menu Pengunjung"])
                     tabel.add_row(["1", "Lihat monster"])
-                    tabel.add_row(["2", "Keluar"])
+                    tabel.add_row(["2", "Lihat komentar"])
+                    tabel.add_row(["3", "Keluar"])
                     print(tabel)
 
                     try:
