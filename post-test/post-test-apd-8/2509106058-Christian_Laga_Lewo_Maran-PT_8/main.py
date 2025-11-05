@@ -63,7 +63,7 @@ while True:
                 while True:
                     tabel = PrettyTable(["No", "Menu Pengunjung"])
                     tabel.add_row(["1", "Lihat monster"])
-                    tabel.add_row(["2", "Lihat komentar"])
+                    tabel.add_row(["2", "Tambah komentar"])
                     tabel.add_row(["3", "Keluar"])
                     print(tabel)
 
